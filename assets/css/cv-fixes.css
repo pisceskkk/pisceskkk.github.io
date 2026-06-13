@@ -1,0 +1,43 @@
+/* CV page layout fixes for long date/location columns in JSON Resume entries. */
+.cv .list-group-item > .row {
+  display: grid;
+  grid-template-columns: minmax(8.5rem, 30%) minmax(0, 1fr);
+  column-gap: 1rem;
+  align-items: start;
+}
+
+.cv .list-group-item > .row > [class*="col-"] {
+  flex: none;
+  max-width: none;
+  width: auto;
+}
+
+.cv .list-group-item > .row > .date-column {
+  text-align: left !important;
+}
+
+.cv .list-group-item > .row > [class*="col-"]:last-child {
+  margin-top: 0 !important;
+}
+
+.cv .list-group-item > .row > [class*="col-"]:last-child > h6 {
+  margin-left: 0 !important;
+}
+
+.cv p.location,
+.cv .badge {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+
+.cv p.location {
+  line-height: 1.25;
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 575.98px) {
+  .cv .list-group-item > .row {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.5rem;
+  }
+}

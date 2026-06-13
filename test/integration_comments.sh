@@ -4,9 +4,12 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/comments-test-override.yml"
 tmp_site="${tmp_dir}/site"
+giscus_post="_posts/2022-12-10-giscus-comments.md"
+disqus_post="_posts/2015-10-20-disqus-comments.md"
 
 cleanup() {
   rm -rf "${tmp_dir}"
+  rm -f "${giscus_post}" "${disqus_post}"
 }
 trap cleanup EXIT
 
@@ -17,6 +20,36 @@ giscus:
   category: Comments
   category_id: DIC_kwDOExample
 YAML
+
+cat >"${giscus_post}" <<'MARKDOWN'
+---
+layout: post
+title: a post with giscus comments
+date: 2022-12-10 11:59:00-0400
+description: an integration test post with giscus comments
+tags: comments
+categories: sample-posts external-services
+giscus_comments: true
+related_posts: false
+---
+
+This post verifies Giscus comments integration.
+MARKDOWN
+
+cat >"${disqus_post}" <<'MARKDOWN'
+---
+layout: post
+title: a post with disqus comments
+date: 2015-10-20 11:59:00-0400
+description: an integration test post with disqus comments
+tags: comments
+categories: sample-posts external-services
+disqus_comments: true
+related_posts: false
+---
+
+This post verifies Disqus comments integration.
+MARKDOWN
 
 bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
 
