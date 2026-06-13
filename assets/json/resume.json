@@ -23,6 +23,7 @@
       "position": "AI Engineer",
       "location": "ICT Computing Product Line / Ascend Inference Dev Dept",
       "startDate": "2025-07-01",
+      "endDate": "Present",
       "summary": "Working on vLLM-Ascend inference optimization.",
       "highlights": [
         "vLLM-Ascend sequence parallelism: extended single-machine inference context to 1M tokens on Ascend 910C, achieving ~50% TTFT reduction for 32K+ contexts",

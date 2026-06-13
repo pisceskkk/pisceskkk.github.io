@@ -1,10 +1,9 @@
 cv:
   name: Chunshuo Qiu
-  label: AI Engineer
+  headline: AI Engineer at Huawei. MSc from UCAS/ICT. Research in 3D vision, computer graphics, and LLM inference optimization.
   email: chunshuoq@gmail.com
   location: Beijing / Hangzhou, China
-  image: ""
-  summary: AI Engineer at Huawei. MSc from UCAS/ICT. Research in 3D vision, computer graphics, and LLM inference optimization.
+  photo:
 
   social_networks:
     - network: GitHub
@@ -17,19 +16,19 @@ cv:
       - institution: University of Chinese Academy of Sciences / Institute of Computing Technology, CAS
         location: Beijing, China
         area: Computer Science and Technology
-        studyType: MEng
+        degree: MEng
         start_date: 2022
         end_date: 2025
-        score: "GPA: 3.49/4.0"
-        courses: "Computer Graphics, 3D Computer Vision"
         highlights:
+          - "GPA: 3.49/4.0"
+          - "Coursework: Computer Graphics, 3D Computer Vision"
           - "Advisor: Prof. Lin Gao"
           - "Research: 3D talking face generation, 3D Gaussian splatting"
 
       - institution: National University of Defense Technology
         location: Changsha, Hunan, China
         area: Computer Science and Technology (AI & Big Data)
-        studyType: BEng
+        degree: BEng
         start_date: 2018
         end_date: 2022
         highlights:
@@ -40,7 +39,7 @@ cv:
         position: AI Engineer
         location: ICT Computing Product Line / Ascend Inference Dev Dept
         start_date: 2025-07
-        end_date: Present
+        end_date: present
         summary: Working on vLLM-Ascend inference optimization, including sequence parallelism (DCP & PCP), DeepSeek model adaptation, and long-context inference performance tuning.
         highlights:
           - "vLLM-Ascend sequence parallelism: extended single-machine inference context to 1M tokens on Ascend 910C, achieving ~50% TTFT reduction for 32K+ contexts"
@@ -48,41 +47,15 @@ cv:
           - "Active contributor to vLLM open-source community (DCP & PCP features)"
 
     Awards:
-      - title: NUDT First-Class Scholarship
-        date: 2018-2021
-        summary: "Awarded for four consecutive years"
-
-      - title: UCAS Academic Scholarship
-        date: 2022-2024
-        summary: "Awarded for three consecutive years"
-
-      - title: ICPC Nanchang Invitational Gold Medal
-        date: 2019
-        summary: "International Collegiate Programming Contest"
-
-      - title: ICPC Shanghai Regional Silver Medal
-        date: 2020
-        summary: "International Collegiate Programming Contest"
-
-      - title: CCPC Xiangtan Invitational Gold Medal
-        date: 2021
-        summary: "China Collegiate Programming Contest"
-
-      - title: CCPC Mianyang Regional Silver Medal
-        date: 2020
-        summary: "China Collegiate Programming Contest"
-
-      - title: National 2nd Prize in CUMCM
-        date: 2020
-        summary: "Contemporary Undergraduate Mathematical Contest in Modeling"
-
-      - title: CCSP National Silver Award
-        date: 2020
-        summary: "CCF Collegiate Computer Systems & Programming Contest"
-
-      - title: CCCP Group Programming Ladder Tournament National Silver
-        date: 2020
-        summary: "Team programming competition"
+      - bullet: "NUDT First-Class Scholarship, awarded for four consecutive years (2018-2021)"
+      - bullet: "UCAS Academic Scholarship, awarded for three consecutive years (2022-2024)"
+      - bullet: "ICPC Nanchang Invitational Gold Medal, International Collegiate Programming Contest (2019)"
+      - bullet: "ICPC Shanghai Regional Silver Medal, International Collegiate Programming Contest (2020)"
+      - bullet: "CCPC Xiangtan Invitational Gold Medal, China Collegiate Programming Contest (2021)"
+      - bullet: "CCPC Mianyang Regional Silver Medal, China Collegiate Programming Contest (2020)"
+      - bullet: "National 2nd Prize in CUMCM, Contemporary Undergraduate Mathematical Contest in Modeling (2020)"
+      - bullet: "CCSP National Silver Award, CCF Collegiate Computer Systems & Programming Contest (2020)"
+      - bullet: "CCCP Group Programming Ladder Tournament National Silver, team programming competition (2020)"
 
     Publications:
       - title: "Audio-Driven Emotion-Aware 3D Talking Face Generation from Single Image"
@@ -94,8 +67,8 @@ cv:
           - Yan-Pei Cao
           - Yu-Kun Lai
           - Lin Gao
-        publisher: IEEE International Conference on Multimedia & Expo (ICME)
-        releaseDate: 2025
+        journal: IEEE International Conference on Multimedia & Expo (ICME)
+        date: 2025
         summary: "IEEE ICME 2025, pp. 1-6"
 
       - title: "RETA3D: Real-Time Animatable 3D Gaussian Head Generation"
@@ -106,27 +79,27 @@ cv:
           - Yan-Pei Cao
           - Hongbo Fu
           - Lin Gao
-        publisher: Eurographics 2026 - Short Papers
-        releaseDate: 2026
+        journal: Eurographics 2026 - Short Papers
+        date: 2026
         summary: "Eurographics 2026 Short Papers"
 
     Skills:
-      - name: Programming
-        keywords: "Python, C++, Git"
+      - label: Programming
+        details: "Python, C++, Git"
 
-      - name: AI/ML
-        keywords: "vLLM, PyTorch, NeRF, 3D Gaussian Splatting, Deep Learning"
+      - label: AI/ML
+        details: "vLLM, PyTorch, NeRF, 3D Gaussian Splatting, Deep Learning"
 
-      - name: Areas
-        keywords: "LLM Inference, Sequence Parallelism, 3D Computer Vision, Computer Graphics"
+      - label: Areas
+        details: "LLM Inference, Sequence Parallelism, 3D Computer Vision, Computer Graphics"
 
     Languages:
-      - name: Chinese
-        summary: "Native speaker"
+      - label: Chinese
+        details: "Native speaker"
 
-      - name: English
-        summary: "Proficient (CET-6, IELTS 6.0)"
+      - label: English
+        details: "Proficient (CET-6, IELTS 6.0)"
 
     Interests:
-      - name: Hobbies
-        keywords: "Swimming, Football, Cycling"
+      - label: Hobbies
+        details: "Swimming, Football, Cycling"
