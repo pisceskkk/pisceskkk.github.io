@@ -569,7 +569,7 @@ schedule:
     description: Overview of course content and objectives
     materials:
       - name: Slides
-        url: /assets/pdf/example_pdf.pdf
+        url: /assets/pdf/CV.pdf
       - name: Reading
         url: https://example.com/reading
   - week: 2
